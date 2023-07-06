@@ -6,7 +6,7 @@
   }
   
   .progress {
-    background-color: green;
+    background-color: rgb(7, 89, 133);
     height: 100%;
     transition: width 2s ease-in-out;
   }
