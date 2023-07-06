@@ -5,7 +5,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Zoom } from 'react-awesome-reveal';
 import ReactTypingEffect from 'react-typing-effect';
-import { FaArrowDown, FaBookReader, FaDownload, FaEnvelope, FaGamepad, FaLocationArrow, FaMapMarkedAlt, FaPhoneAlt, FaRegCalendarAlt } from "react-icons/fa";
+import { FaArrowDown, FaBookReader, FaDownload, FaEnvelope, FaFacebook, FaGamepad, FaGithub, FaLinkedin, FaLocationArrow, FaMapMarkedAlt, FaPhoneAlt, FaRegCalendarAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,11 +20,11 @@ const About = () => {
     const handleDownload = () => {
         const downloadUrl = '/juwel-resume.pdf';
         window.location.href = downloadUrl;
-      };
+    };
 
     return (
         <div id='about' className=''>
-            
+
             <Container>
 
                 <div className='mt-32 mb-14 md:text-left text-center'>
@@ -64,7 +65,7 @@ const About = () => {
                         <br />
 
                         <p className='my-8'>
-                           Hi, I am juwel. I am a junior MERN stack web developer. I studied for a diploma in engineering in electronic technology. I have developed a strong passion for web development and have been actively pursuing it.  I learned a lot about programming and building websites. I also took online courses to improve my skills.
+                            Hi, I am juwel. I am a junior MERN stack web developer. I studied for a diploma in engineering in electronic technology. I have developed a strong passion for web development and have been actively pursuing it.  I learned a lot about programming and building websites. I also took online courses to improve my skills.
                         </p>
                         <div className='md:flex md:space-x-10'>
                             <div>
@@ -72,15 +73,20 @@ const About = () => {
                                 <p className='font-bold text-amber-800'><FaMapMarkedAlt className='inline space-x-4'></FaMapMarkedAlt> Location : <span className='font-semibold text-black'>Tangail, Dhaka, Bangladesh</span></p>
                                 <p className='font-bold my-2 text-amber-800'><FaBookReader className='inline space-x-4'></FaBookReader> Study : <span className='font-semibold text-black'>Diploma In Engineering</span></p>
                                 <p className='font-bold text-amber-800'><FaEnvelope
-                                 className='inline space-x-4'></FaEnvelope> Email : <span className='font-semibold text-black'>juwel2463@gmail.com</span> </p>
+                                    className='inline space-x-4'></FaEnvelope> Email : <span className='font-semibold text-black'>juwel2463@gmail.com</span> </p>
                             </div>
                             <div>
                                 <p className='font-bold my-2 text-amber-800'><FaRegCalendarAlt className='inline space-x-4'></FaRegCalendarAlt> Age : <span className='font-semibold text-black'>24</span> </p>
                                 <p className='font-bold text-amber-800'><FaGamepad className='inline space-x-4'></FaGamepad> Interests : <span className='font-semibold text-black'> Reading, Codeing</span></p>
                                 <p className='font-bold my-2 text-amber-800'><FaPhoneAlt className='inline space-x-4'></FaPhoneAlt> Phone : <span className='font-semibold text-black'>+8801957-119777</span></p>
-                               
+                                <div className='flex space-x-3'>
+                                    <Link to={`https://www.facebook.com/profile.php?id=100021549764642`} className='text-3xl'><FaFacebook></FaFacebook></Link>
+                                    <Link to={`https://www.linkedin.com/in/mohammad-ali-37526b263/`} className=' text-3xl'><FaLinkedin></FaLinkedin></Link>
+                                    <Link to={`https://github.com/muhammadali246397`} className='text-3xl'><FaGithub></FaGithub></Link>
+                                </div>
+
                             </div>
-                            
+
                         </div>
                         <button onClick={handleDownload} className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaDownload></FaDownload></button>
                     </div>
@@ -89,7 +95,7 @@ const About = () => {
                     </div>
                 </div>
             </Container >
-            
+
         </div >
     );
 };

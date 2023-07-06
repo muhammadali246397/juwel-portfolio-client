@@ -44,10 +44,8 @@ const Navbar = () => {
                             {navitem}
                         </ul>
                     </div>
-                    <button  className="btn border-none my-auto rounded-none btn-ghost md:ms-36 normal-case text-xl font-bold text-amber-400 hover:text-white">Download Resume <FaDownload></FaDownload></button>
-                    {/* <button onClick={handleDownload} className="btn btn-ghost md:ms-36 normal-case text-2xl font-bold text-amber-400">
-                        JUWEL
-                    </button> */}
+                    <button onClick={handleDownload} className="btn border-none my-auto rounded-none btn-ghost md:ms-36 normal-case text-xl font-bold text-amber-400 hover:text-white">Download Resume <FaDownload></FaDownload></button>
+                   
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal md:me-36 px-1">
