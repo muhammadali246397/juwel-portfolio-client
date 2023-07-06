@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Zoom } from 'react-awesome-reveal';
 import ReactTypingEffect from 'react-typing-effect';
-import { FaArrowDown, FaBookReader, FaEnvelope, FaGamepad, FaLocationArrow, FaMapMarkedAlt, FaPhoneAlt, FaRegCalendarAlt } from "react-icons/fa";
+import { FaArrowDown, FaBookReader, FaDownload, FaEnvelope, FaGamepad, FaLocationArrow, FaMapMarkedAlt, FaPhoneAlt, FaRegCalendarAlt } from "react-icons/fa";
 
 
 
@@ -82,7 +82,7 @@ const About = () => {
                             </div>
                             
                         </div>
-                        <button onClick={handleDownload} className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaArrowDown></FaArrowDown></button>
+                        <button onClick={handleDownload} className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaDownload></FaDownload></button>
                     </div>
                     <div data-aos='fade-left' className='md:w-2/5 h-auto'>
                         <img src={juwel} alt="" />

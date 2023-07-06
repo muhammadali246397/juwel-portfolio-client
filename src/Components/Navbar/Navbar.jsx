@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Container from '../Container/Container';
 import { Link } from 'react-scroll';
 import './Navbar.css'
+import { FaDownload } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -18,12 +19,16 @@ const Navbar = () => {
     window.addEventListener('scroll',changeBackground)
     
     const navitem = <>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link to='home' smooth={true} duration={500}>Home</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link to='about' smooth={true} duration={500}>About</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link to='skills' smooth={true} duration={500}>Skills</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link to='project' smooth={true} duration={500}>Projects</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link to='contact' smooth={true} duration={500}>Contact</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='home' smooth={true} duration={500}>Home</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='about' smooth={true} duration={500}>About</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='skills' smooth={true} duration={500}>Skills</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='project' smooth={true} duration={500}>Projects</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='contact' smooth={true} duration={500}>Contact</Link></li>
     </>
+     const handleDownload = () => {
+        const downloadUrl = '/juwel-resume.pdf';
+        window.location.href = downloadUrl;
+      };
     return (
 
 
@@ -39,9 +44,10 @@ const Navbar = () => {
                             {navitem}
                         </ul>
                     </div>
-                    {/* <Link className="btn btn-ghost md:ms-36 normal-case text-2xl font-bold text-amber-400">
+                    <button  className="btn border-none my-auto rounded-none btn-ghost md:ms-36 normal-case text-xl font-bold text-amber-400 hover:text-white">Download Resume <FaDownload></FaDownload></button>
+                    {/* <button onClick={handleDownload} className="btn btn-ghost md:ms-36 normal-case text-2xl font-bold text-amber-400">
                         JUWEL
-                    </Link> */}
+                    </button> */}
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal md:me-36 px-1">
