@@ -16,6 +16,11 @@ const About = () => {
         });
     }, []);
 
+    const handleDownload = () => {
+        const downloadUrl = '/juwel-resume.pdf';
+        window.location.href = downloadUrl;
+      };
+
     return (
         <div id='about' className=''>
             
@@ -77,7 +82,7 @@ const About = () => {
                             </div>
                             
                         </div>
-                        <button className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaArrowDown></FaArrowDown></button>
+                        <button onClick={handleDownload} className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaArrowDown></FaArrowDown></button>
                     </div>
                     <div data-aos='fade-left' className='md:w-2/5 h-auto'>
                         <img src={juwel} alt="" />
