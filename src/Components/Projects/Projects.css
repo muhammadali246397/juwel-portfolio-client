@@ -1,0 +1,11 @@
+.hoverimg1{
+    background-position: top;
+    transition: ease-in-out 3s;
+}
+.img2{
+    margin-bottom: 30px;
+}
+.hoverimg1:hover{
+    background-position: bottom;
+    
+}
