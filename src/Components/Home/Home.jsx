@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import background from '../../assets/background.jpg'
 import bg from '../../assets/bg.jpg'
 import newbg from '../../assets/new.jpg'
-import juwel from '../../assets/juwel.jpg'
+import juwel from '../../assets/mohammadali.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Bounce, Fade } from 'react-awesome-reveal';

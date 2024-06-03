@@ -6,6 +6,7 @@ import Skills from '../Skills/Skills';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import Blogs from '../blogs/Blogs';
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
             <About></About>
             <Skills></Skills>
             <Projects></Projects>
+            <Blogs></Blogs>
             <Contact></Contact>
             <Footer></Footer>
           </div>

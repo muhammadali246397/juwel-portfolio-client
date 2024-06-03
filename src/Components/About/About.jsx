@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Container from '../Container/Container';
-import juwel from '../../assets/juwel2.jpg';
+import juwel from '../../assets/juwel3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Zoom } from 'react-awesome-reveal';

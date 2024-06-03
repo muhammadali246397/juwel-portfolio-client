@@ -19,11 +19,12 @@ const Navbar = () => {
     window.addEventListener('scroll',changeBackground)
     
     const navitem = <>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='home' smooth={true} duration={500}>Home</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='about' smooth={true} duration={500}>About</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='skills' smooth={true} duration={500}>Skills</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='project' smooth={true} duration={500}>Projects</Link></li>
-        <li className='font-semibold text-amber-400 uppercase text-lg'><Link className='hover:text-white' to='contact' smooth={true} duration={500}>Contact</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='home' smooth={true} duration={500}>Home</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='about' smooth={true} duration={500}>About</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='skills' smooth={true} duration={500}>Skills</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='project' smooth={true} duration={500}>Projects</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='blogs' smooth={true} duration={500}>Blogs</Link></li>
+        <li className='font-semibold text-amber-400 uppercase text-md'><Link className='hover:text-white' to='contact' smooth={true} duration={500}>Contact</Link></li>
     </>
      const handleDownload = () => {
         const downloadUrl = '/juwel-resume.pdf';
