@@ -9,6 +9,7 @@ import toycar from '.././../assets/toycar.png'
 import chef from '.././../assets/chef.png'
 import g3art from '.././../assets/g3art.png'
 import './Projects.css'
+import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
 const Projects = () => {
     const [count, setCount] = useState(false)
@@ -43,25 +44,51 @@ const Projects = () => {
                     </div>
                 </ScrollTrigger>
 
-                <div className='md:grid md:grid-cols-2 mt-28'>
-                    <div data-aos='fade-right' className='img2'>
-                        <div style={{ backgroundImage: `url(${chef})`, backgroundSize:'cover', }} className='hoverimg1 border md:h-[250px] md:w-11/12 md:mr-4' >
-                        </div>
-                    </div>
-                    <div data-aos='fade-left' className='img2'>
-                        <div style={{ backgroundImage: `url(${toycar})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12'>
-                        </div>
-                    </div>
-                    <div data-aos='fade-right' className='img2'>
-                        <div style={{ backgroundImage: `url(${g3art})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12'>
-                        </div>
-                    </div>
-                    <div data-aos='fade-left' className='img2'>
-                        <div style={{ backgroundImage: `url(${crown})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12'>
-                        </div>
+                <div className='my-10'>
+                    <Tabs>
+                        <TabList className='text-center flex space-x-4 justify-center'>
+                            <Tab className='font-semibold text-xl cursor-pointer hover:text-orange-800 focus:text-orange-800'>Front-end</Tab>
+                            <Tab className='font-semibold text-xl cursor-pointer hover:text-orange-800 focus:text-orange-800'>MERN-Stack</Tab>
 
-                    </div>
+                        </TabList>
+
+                        <TabPanel>
+                            <div className=' md:grid md:grid-cols-2 mt-10'>
+                                <div data-aos='fade-right' className='img2 border p-2'>
+                                    <div style={{ backgroundImage: `url(${chef})`, backgroundSize: 'cover', }} className='hoverimg1 md:h-[250px] md:w-11/12 w-[100%] h-[200px] md:mr-4' >
+                                    </div>
+                                    <div>
+                                        <h4 className='font-bold text-2xl text-amber-800'>Chef Master</h4>
+                                        <button className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Details</button>
+                                    </div>
+                                </div>
+                               
+                                <div data-aos='fade-left' className='img2'>
+                                    <div style={{ backgroundImage: `url(${g3art})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </TabPanel>
+                        <TabPanel>
+                            <div className=' md:grid md:grid-cols-2 mt-10'>
+
+                                <div data-aos='fade-right' className='img2'>
+                                    <div style={{ backgroundImage: `url(${toycar})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
+                                    </div>
+                                </div>
+
+                                <div data-aos='fade-left' className='img2'>
+                                    <div style={{ backgroundImage: `url(${crown})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </TabPanel>
+                    </Tabs>
                 </div>
+
+
 
             </Container>
         </div>
