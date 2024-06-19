@@ -8,6 +8,10 @@ import DashboardLayout from "../dashboard/DashboardLayout";
 import AllProject from "../dashboard/allProject/AllProject";
 import AddProject from "../dashboard/addProject/AddProject";
 import AddBlogs from "../dashboard/addBlog/AddBlogs";
+import Dashboard from "../dashboard/Dashboard";
+import Blogs from "../blogs/Blogs";
+import AllBlogs from "../dashboard/bolgs/AllBlogs";
+import AddResume from "../dashboard/addResume/AddResume";
 
   const router = createBrowserRouter([
     {
@@ -23,8 +27,16 @@ import AddBlogs from "../dashboard/addBlog/AddBlogs";
       element:<DashboardLayout />,
       children:[
         {
-          path:'dashboard',
+          path:'/dashboard',
+          element:<Dashboard />
+        },
+        {
+          path:'projects',
           element:<AllProject/>
+        },
+        {
+          path:'blogs',
+          element:<AllBlogs />
         },
         {
           path:'addProject',
@@ -33,6 +45,10 @@ import AddBlogs from "../dashboard/addBlog/AddBlogs";
         {
           path:'addBlogs',
           element:<AddBlogs/>
+        },
+        {
+          path:'resume',
+          element:<AddResume/>
         }
       ]
     }
