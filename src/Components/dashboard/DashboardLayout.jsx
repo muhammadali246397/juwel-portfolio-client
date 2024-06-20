@@ -23,16 +23,18 @@ const DashboardLayout = () => {
                 <div className='col-span-10 bg-[#e7e9fb]'>
                     <div className=''>
 
-                        <div className='flex justify-between bg-white py-4 sticky top-0'>
+                        <div className='flex justify-between border-b border-white px-4 py-4'>
                             <div className=''>
-                                <input className='py-2 border rounded-md ms-5 px-2 me-2' type="text" placeholder='Sarch Project' />
-                                <input className='py-2 border rounded-md px-3' type="submit" value='Search' />
+                                <input className='py-2 border border-black rounded-md ms-5 px-2 me-2' type="text" placeholder='Sarch Project' />
+                                <input className='py-2 border border-black rounded-md px-3' type="submit" value='Search' />
                             </div>
                             <div>
-                                <FaUser/>
+                                <FaUser />
                             </div>
                         </div>
-                        <Outlet />
+                        <div className='px-6'>
+                            <Outlet />
+                        </div>
                     </div>
                 </div>
             </div>
