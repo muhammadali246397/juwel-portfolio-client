@@ -26,7 +26,7 @@ const Projects = () => {
                     <div>
                         {
                             count && <>
-                                <div data-aos='fade-up' style={{ backgroundImage: `url(${bg})` }} className='md:flex justify-around py-5'>
+                                <div data-aos='fade-up' data-aos-once="true" style={{ backgroundImage: `url(${bg})` }} className='md:flex justify-around py-5'>
                                     <div style={{ background: 'rgb(7, 89, 133)' }} className='w-2/8 text-center text-white p-10 border-2' >
                                         <CountUp className='text-xl font-bold' start={0} end={20} duration={2} delay={1}></CountUp>
                                         <h3 className='text-xl font-bold'>complete projects</h3>
@@ -46,16 +46,9 @@ const Projects = () => {
                 </ScrollTrigger>
 
                 <div className='my-10'>
-                    <Tabs>
-                        <TabList className='text-center flex space-x-4 justify-center'>
-                            <Tab className='font-semibold text-xl cursor-pointer hover:text-orange-800 focus:text-orange-800'>Front-end</Tab>
-                            <Tab className='font-semibold text-xl cursor-pointer hover:text-orange-800 focus:text-orange-800'>MERN-Stack</Tab>
-
-                        </TabList>
-
-                        <TabPanel>
-                            <div className=' md:grid md:grid-cols-2 gap-4 mt-10'>
-                                <div data-aos='fade-right' className='img2 border p-2'>
+                   
+                            <div className=' md:grid md:grid-cols-3 gap-4 mt-10'>
+                                <div data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-2'>
                                     <div style={{ backgroundImage: `url(${chef})`, backgroundSize: 'cover', }} className='hoverimg1 md:h-[250px] md:w-11/12 w-[100%] h-[200px] md:mr-4' >
                                     </div>
                                     <div>
@@ -64,20 +57,14 @@ const Projects = () => {
                                     </div>
                                 </div>
                                
-                                <div data-aos='fade-left' className='img2 border p-2'>
+                                <div data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-2'>
                                     <div style={{ backgroundImage: `url(${g3art})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
                                     </div>
                                     <div>
                                     <Modal btnName='DETAILS'></Modal>
                                     </div>
                                 </div>
-                             
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div className=' md:grid md:grid-cols-2 gap-4 mt-10'>
-
-                                <div data-aos='fade-right' className='img2 border p-2'>
+                                <div data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-2'>
                                     <div style={{ backgroundImage: `url(${toycar})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
                                     </div>
                                     <div>
@@ -85,7 +72,7 @@ const Projects = () => {
                                     </div>
                                 </div>
 
-                                <div data-aos='fade-left' className='img2 border p-2'>
+                                <div data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-2'>
                                     <div style={{ backgroundImage: `url(${crown})`, backgroundSize: 'cover' }} className='hoverimg1 border md:h-[250px] md:w-11/12 w-[100%] h-[200px]'>
                                     </div>
                                     <div>
@@ -93,9 +80,10 @@ const Projects = () => {
                                     </div>
 
                                 </div>
+                             
                             </div>
-                        </TabPanel>
-                    </Tabs>
+                       
+
                 </div>
 
 
