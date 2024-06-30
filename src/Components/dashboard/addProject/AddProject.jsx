@@ -17,7 +17,8 @@ const AddProject = () => {
             features:data.features,
             liveLink:data.liveLink,
             clinteLink:data.clinteLink,
-            serverLink:data.serverLink
+            serverLink:data.serverLink,
+            date:data.date
           
         }
 
@@ -107,13 +108,19 @@ const AddProject = () => {
                         <label className="label">
                             <span className="text-xl">Project Clinte side repeository</span>
                         </label>
-                        <input type="text" placeholder="Project Clinte side repo link" className="input input-bordered" {...register("clinteLink", { required: true, maxLength: 80 })} />
+                        <input type="text" placeholder="Project Clinte side repo link" className="input input-bordered" {...register("clinteLink", { required: true })} />
                     </div>
                     <div className="form-control">
                         <label className="label">
                             <span className="text-xl">Project server side repeository</span>
                         </label>
-                        <input type="text" placeholder="Project server side repo link" className="input input-bordered" {...register("serverLink", { required: true, maxLength: 80 })} />
+                        <input type="text" placeholder="Project server side repo link" className="input input-bordered" {...register("serverLink", { required: true})} />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="text-xl">Date</span>
+                        </label>
+                        <input type="date"className="input input-bordered" {...register("date", { required: true })} />
                     </div>
                     <div className="form-control mt-6">
                         <button className="btn btn-primary">Upload Now</button>
