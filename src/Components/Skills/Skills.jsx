@@ -6,9 +6,9 @@ import Skillsbar from './Skillsbar';
 
 const Skills = () => {
     return (
-        <div id='skills' className='my-20'>
+        <div id='skills' className=' py-10 bg-slate-50'>
             <Container>
-                <div className='md:mt-32 mt-18 mb-14 md:text-left text-center'>
+                <div className='md:mt-5 mt-18 mb-14 md:text-left text-center'>
                     <p className='text-amber-800 font-semibold'>SKILLS</p>
 
                     <h2 className='text-4xl font-extrabold'>

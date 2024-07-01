@@ -23,11 +23,11 @@ const About = () => {
     };
 
     return (
-        <div id='about' className=''>
+        <div id='about' className='bg-slate-100 py-10'>
 
             <Container>
 
-                <div className='mt-32 mb-14 md:text-left text-center'>
+                <div className=' mb-14 md:text-left text-center'>
                     <p className='text-amber-800 font-semibold'>BIOGRAPHY</p>
 
                     <h2 className='text-4xl font-extrabold'>

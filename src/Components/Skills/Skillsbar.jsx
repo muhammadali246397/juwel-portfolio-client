@@ -46,13 +46,13 @@ const Skillsbar = () => {
       }, []);
     
       return (
-        <div className='md:grid grid-cols-2 gap-10'>
+        <div className='md:grid grid-cols-2 gap-4'>
             
           {skills.map((skill, index) => (
             
             <Zoom  key={index}>
               <div className="skills-section">
-              <div className='text-2xl font-semibold text-amber-800'>{skill.name}</div>
+              <div className='text-xl font-bold text-amber-800'>{skill.name}</div>
               <div>{skill.value}%</div>
               <div className="progress-bar">
                 <div
