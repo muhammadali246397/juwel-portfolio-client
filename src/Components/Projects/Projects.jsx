@@ -65,7 +65,7 @@ const Projects = () => {
                     <div className=' md:grid md:grid-cols-3 gap-8'>
                         {
                             projects?.map((project, index) =>
-                                <div key={index} data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-4 shadow-md hover:shadow-lg transition-all'>
+                                <div key={index} data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-4 shadow-md hover:shadow-lg rounded-lg  hover:translate-y-2 transition-all'>
                                     <img src={project?.image} alt="" />
                                     <div className='flex justify-between items-center'>
                                         <p className='font-xl font-bold mt-4'>{project?.title}</p>

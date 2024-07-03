@@ -20,9 +20,9 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='my-20'>
+        <div id='contact' className=''>
             <Container>
-                <div className='md:mt-32 mb-14 md:text-left text-center'>
+                <div className='md:mt-10 mb-14 md:text-left text-center'>
                     <p className='text-amber-800 font-semibold'>CONTACT</p>
                     <h2 className='text-4xl font-extrabold'>
                         <Zoom cascade direction={"down"} duration={100}>Get In Touch</Zoom></h2>
