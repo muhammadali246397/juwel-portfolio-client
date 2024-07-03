@@ -22,7 +22,7 @@ const AddProject = () => {
           
         }
 
-        fetch('http://localhost:3000/project',{
+        fetch('https://juwel-server.vercel.app/project',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

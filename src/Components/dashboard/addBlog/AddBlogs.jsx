@@ -7,7 +7,7 @@ const AddBlogs = () => {
     const onSubmit = formdata => {
  
 
-        fetch('http://localhost:3000/blog',{
+        fetch('https://juwel-server.vercel.app/blog',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

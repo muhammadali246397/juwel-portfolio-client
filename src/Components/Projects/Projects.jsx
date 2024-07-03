@@ -12,12 +12,12 @@ const Projects = () => {
     const [singleProject, setSingleProject] = useState('')
     
     useEffect(() => {
-        fetch('http://localhost:3000/projects')
+        fetch('https://juwel-server.vercel.app/projects')
             .then(res => res.json())
             .then(data => setProject(data))
     }, [])
     const handleDetails = (id) => {
-        fetch(`http://localhost:3000/singleProject/${id}`)
+        fetch(`https://juwel-server.vercel.app/singleProject/${id}`)
         .then(res => res.json())
         .then(data => setSingleProject(data))
     }

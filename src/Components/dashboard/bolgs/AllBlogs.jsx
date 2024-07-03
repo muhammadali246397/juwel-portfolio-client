@@ -7,14 +7,14 @@ const AllBlogs = () => {
    
 
     useEffect(() => {
-        fetch('http://localhost:3000/blogs')
+        fetch('https://juwel-server.vercel.app/blogs')
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
     const deleteBlog = id => {
       alert(
         "are you sure delete it!",
-          fetch(`http://localhost:3000/blog/${id}`,{
+          fetch(`https://juwel-server.vercel.app/blog/${id}`,{
             method:"DELETE"
         })
         .then(res => res.json())

@@ -7,14 +7,14 @@ const AllProject = () => {
     console.log(projects)
 
     useEffect(() => {
-        fetch('http://localhost:3000/projects')
+        fetch('https://juwel-server.vercel.app/projects')
             .then(res => res.json())
             .then(data => setProject(data))
     }, [])
     const deleteProject = id => {
       alert(
         "are you sure delete it!",
-          fetch(`http://localhost:3000/project/${id}`,{
+          fetch(`https://juwel-server.vercel.app/project/${id}`,{
             method:"DELETE"
         })
         .then(res => res.json())
