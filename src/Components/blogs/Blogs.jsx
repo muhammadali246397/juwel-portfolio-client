@@ -11,7 +11,7 @@ const Blogs = () => {
             .then(data => setBlogs(data))
     }, [])
     return (
-        <div className="bg-slate-50 py-4 " id="blogs">
+        <div className="bg-slate-50 py-4 w-full " id="blogs">
             <Container>
                 <div className='md:mt-10 mb-14 md:text-left text-center'>
                     <p className='text-amber-800 font-semibold'>BLOGS</p>

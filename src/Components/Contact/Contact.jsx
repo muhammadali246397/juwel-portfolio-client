@@ -20,7 +20,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className=''>
+        <div id='contact' className='w-full'>
             <Container>
                 <div className='md:mt-10 mb-14 md:text-left text-center'>
                     <p className='text-amber-800 font-semibold'>CONTACT</p>
@@ -29,11 +29,12 @@ const Contact = () => {
                 </div>
                 <div className='md:flex justify-between'>
                  
-                  <div data-aos='fade-right' className=' md:w-3/4 border-2 border-amber-800'>
-                        <img style={{}} className='w-5/6' src={contact} alt="" />
+                  <div data-aos='fade-down' className=' md:w-3/4 border-2 border-amber-800'>
+                        <img style={{}} className='' src={contact} alt="" />
+                        {/* <h1>this is the image tag and i will change this style</h1> */}
                     </div>
 
-                   <div data-aos='fade-left' className='md:w-3/4 md:mt-0 mt-5 md:ms-10'>
+                   <div data-aos='fade-up' className='md:w-3/4 w-full md:mt-0 mt-5 md:ms-10'>
                         <div className=" w-full shadow-2xl bg-base-100">
                             <form  onSubmit={sendEmail} ref={form} className='card-body'>
                                 <div className="form-control">

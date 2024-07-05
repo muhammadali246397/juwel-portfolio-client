@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div style={{ background: 'rgb(7, 89, 133)' }} className='mt-20'>
+        <div style={{ background: 'rgb(7, 89, 133)' }} className='mt-10'>
             <Container>
                 <footer className="footer items-center py-20 text-white">
 

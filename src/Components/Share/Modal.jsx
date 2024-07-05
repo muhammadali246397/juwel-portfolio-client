@@ -8,7 +8,7 @@ const Modal = ({btnName,projectDetails}) => {
            
             <button className="btn bg-amber-800 rounded-none mt-5 w-full hover:bg-amber-900 text-white" onClick={() => document.getElementById('my_modal_3').showModal()}>{btnName}</button>
             <dialog id="my_modal_3" className="modal">
-                <div className="modal-box w-11/12 max-w-5xl text-start">
+                <div className="modal-box md:w-11/12  text-start">
                     <form method="dialog">
                         
                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>

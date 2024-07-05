@@ -22,7 +22,7 @@ const Projects = () => {
         .then(data => setSingleProject(data))
     }
     return (
-        <div id='project' className='my-20'>
+        <div id='project' className='my-20 w-full'>
 
             <Container>
                 <div className='md:mt-10 mb-14 md:text-left text-center'>
