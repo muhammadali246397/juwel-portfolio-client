@@ -65,14 +65,14 @@ const Projects = () => {
                     <div className=' md:grid md:grid-cols-3 gap-8'>
                         {
                             projects?.map((project, index) =>
-                                <div key={index} data-aos='fade-up' data-aos-dealy="100" data-aos-once="true" className='img2 border p-4 shadow-md hover:shadow-lg rounded-lg  hover:translate-y-2 transition-all'>
+                                <div key={index} data-aos='fade-up' data-aos-dealy="100"  className='img2 border p-4 mb-4 shadow-md hover:shadow-lg rounded-lg  hover:translate-y-2 transition-all'>
                                     <img src={project?.image} alt="" />
                                     <div className='flex justify-between items-center'>
                                         <p className='font-xl font-bold mt-4'>{project?.title}</p>
                                         <a className='  no-underline text-blue-600' href={project?.liveLink}>Live Link</a>
 
                                     </div>
-                                    <div className='h-[100px] pe-1 overflow-hidden'>{project?.overview}</div>
+                                    <div className='  text-ellipsis line-clamp-3'>{project?.overview}</div>
                                     <div>
 
                                         <button onClick={() => handleDetails(project._id)} className='w-full'><Modal projectDetails={singleProject?singleProject:'worng'} btnName='DETAILS'></Modal></button>

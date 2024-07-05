@@ -18,15 +18,15 @@ const Blogs = () => {
                     <h2 className='text-4xl font-extrabold'>
                         <Zoom cascade direction={"down"} duration={100}>Recent Blogs</Zoom></h2>
                 </div>
-                <div className="grid grid-cols-3 gap-8">
+                <div data-aos='fade-up' data-aos-dealy="100" className="md:grid md:grid-cols-3 gap-8">
                     {
-                        blogs?.map((blog,index) => <div key={index} className="bg-white shadow-md hover:shadow-lg hover:-translate-y-2 transition-all px-4 py-2 rounded-lg">
+                        blogs?.map((blog,index) => <div key={index} className="bg-white mb-4 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all  rounded-lg">
                             <div className="h-[180px] rounded-md">
-                                <img className="w-full h-full rounded-md" src={blog.image} alt="" />
+                                <img className="w-full h-full overflow-hidden rounded-t-lg" src={blog.image} alt="" />
                             </div>
-                            <div className="pb-4">
+                            <div className="px-4 py-2">
                                 <h3 className="text-xl font-bold py-2 truncate">{blog.title}</h3>
-                                <p className="h-[125px] overflow-hidden ">{blog.description}</p>
+                                <p className="text-ellipsis line-clamp-3 overflow-hidden ">{blog.description}</p>
                                 <button className="px-4 mt-3 py-2 border hover:shadow-md">see more</button>
                             </div>
                         </div> )

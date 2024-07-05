@@ -18,7 +18,7 @@ const About = () => {
     }, []);
 
     const handleDownload = () => {
-        const downloadUrl = '/juwel-resume.pdf';
+        const downloadUrl = 'https://drive.google.com/file/d/1eJJob5JW2-s74avOdrzu7Bzns0oqa4k3/view?usp=drive_link';
         window.location.href = downloadUrl;
     };
 

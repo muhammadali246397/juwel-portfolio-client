@@ -26,11 +26,11 @@ const Navbar = () => {
         <li className='font-semibold text-amber-400 uppercase'><Link className='hover:text-white' to='project' smooth={true} duration={500}>Projects</Link></li>
         <li className='font-semibold text-amber-400 uppercase'><Link className='hover:text-white' to='blogs' smooth={true} duration={500}>Blogs</Link></li>
         <li className='font-semibold text-amber-400 uppercase'><Link className='hover:text-white' to='contact' smooth={true} duration={500}>Contact</Link></li>
-        <li className='font-semibold text-amber-400 uppercase'><NavLink className='hover:text-white' to='/login'>Log-in</NavLink></li>
-        <li className='font-semibold text-amber-400 uppercase'><NavLink className='hover:text-white' to='/dashboard' >Dashboard</NavLink></li>
+        {/* <li className='font-semibold text-amber-400 uppercase'><NavLink className='hover:text-white' to='/login'>Log-in</NavLink></li>
+        <li className='font-semibold text-amber-400 uppercase'><NavLink className='hover:text-white' to='/dashboard' >Dashboard</NavLink></li> */}
     </>
      const handleDownload = () => {
-        const downloadUrl = '/juwel-resume.pdf';
+        const downloadUrl = 'https://drive.google.com/file/d/1eJJob5JW2-s74avOdrzu7Bzns0oqa4k3/view?usp=drive_link';
         window.location.href = downloadUrl;
       };
     return (
