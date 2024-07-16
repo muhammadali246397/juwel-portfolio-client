@@ -90,7 +90,7 @@ const About = () => {
                         </div>
                         <button onClick={handleDownload} className="btn bg-amber-800 rounded-none mt-5 hover:bg-amber-900 text-white">Download Resume <FaDownload></FaDownload></button>
                     </div>
-                    <div data-aos='fade-left' className='md:w-2/5 h-auto'>
+                    <div data-aos='fade-up' className='md:w-3/4'>
                         <img src={juwel} alt="" />
                     </div>
                 </div>
